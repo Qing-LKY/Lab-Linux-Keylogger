@@ -1,0 +1,13 @@
+# vscode
+.vscode/
+.clangd/
+compile_commands.json
+
+# c
+*.o
+*.out
+
+# rootfs image
+initramfs.cpio
+initramfs.igz
+busybox/
