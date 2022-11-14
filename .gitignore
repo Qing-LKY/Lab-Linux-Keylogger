@@ -11,3 +11,10 @@ compile_commands.json
 initramfs.cpio
 initramfs.igz
 busybox/
+
+# python
+.env/
+
+# Program
+log.txt
+log_py.txt
