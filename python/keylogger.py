@@ -1,4 +1,4 @@
-#!./.env/bin/python
+#!../.env/bin/python
 #coding=utf-8
 
 import evdev

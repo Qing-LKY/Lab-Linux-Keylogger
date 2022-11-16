@@ -13,8 +13,8 @@
 
 int str_keyboard(char *s) {
     return \
-        s[0] == 'k' && s[1] == 'e' && s[2] == 'y' && \
-        s[3] == 'b' && s[4] == 'o' && s[5] == 'a' && s[6] == 'r' && s[7] == 'd';
+        (s[0] == 'k' || s[0] == 'K') && s[1] == 'e' && s[2] == 'y' && \
+        (s[3] == 'b' || s[3] == 'B') && s[4] == 'o' && s[5] == 'a' && s[6] == 'r' && s[7] == 'd';
 }
 
 int str_event(char *s) {
@@ -85,7 +85,7 @@ int main() {
                 is_shift_pressed = 1;
             }
             if(ev.code == KEY_CAPSLOCK) {
-                is_caps_on = 1;
+                is_caps_on ^= 1;
             }
             if(ev.code == KEY_FN) {
                 fprintf(fh, "Key [FN] pressed.\n");
